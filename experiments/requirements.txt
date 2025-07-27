@@ -6,3 +6,7 @@ bs4
 arxiv
 pymupdf
 langchain-text-splitters
+langchain-openai
+faiss-cpu
+langchain-ollama
+sentence-transformers
