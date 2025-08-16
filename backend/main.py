@@ -38,6 +38,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+os.environ["HF_HOME"] = "/app/hf_cache"
+os.environ["TRANSFORMERS_CACHE"] = "/app/hf_cache"
+os.makedirs("/app/hf_cache", exist_ok=True)
+
 #embeddings
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
