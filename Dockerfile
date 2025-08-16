@@ -1,41 +1,36 @@
-# Use Python 3.10 slim image as base
-FROM python:3.10-slim
+# ---- Build React frontend ----
+FROM node:20-alpine AS frontend-build
 
-# Set working directory
+WORKDIR /app/frontend
+
+# Copy frontend package files and install deps
+COPY frontend/package*.json ./
+RUN npm install
+
+# Copy all frontend source files
+COPY frontend/ ./
+RUN npm run build
+
+# ---- Build FastAPI backend ----
+FROM python:3.11-slim
+
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    curl \
-    software-properties-common \
-    git \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy requirements file first to leverage Docker cache
+# Install FastAPI and other backend dependencies
 COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Python dependencies
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+# Copy backend source
+COPY backend/ ./
 
-# Copy the entire application
-COPY . .
+# Copy React build into backend static folder
+COPY --from=frontend-build /app/frontend/build ./frontend_build
 
-# Create necessary directories
-RUN mkdir -p backend/files && \
-    mkdir -p logs
+# Mount .env if needed
+COPY .env ./
 
-# Set environment variables
-ENV PYTHONPATH=/app
-ENV PYTHONUNBUFFERED=1
-
-# Expose the port that your app runs on
+# Expose port 7860 for Hugging Face Spaces
 EXPOSE 7860
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:7860/health || exit 1
-
-# Command to run the application
-CMD ["python", "app.py"]
+# Command to run FastAPI
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
