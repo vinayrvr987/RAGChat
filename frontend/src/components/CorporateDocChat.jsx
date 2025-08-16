@@ -28,6 +28,29 @@ const CorporateDocChat = () => {
       file: file
     }));
     setUploadedDocs(prev => [...prev, ...newDocs]);
+
+    // Upload each file to FastAPI
+    for (let file of files) {
+      const formData = new FormData();
+      formData.append("file", file);
+
+      try {
+        const res = await fetch('http://localhost:8000/upload', {
+
+          method: "POST",
+          body: formData
+        });
+
+        if (!res.ok) {
+          throw new Error(`Upload failed: ${res.status}`);
+        }
+
+        const data = await res.json();
+        console.log("File uploaded:", data);
+      } catch (err) {
+        console.error("Error uploading file:", err);
+      }
+    }
   };
 
   const handleDrop = (e) => {
@@ -81,7 +104,8 @@ const CorporateDocChat = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          prompt: inputMessage
+          text: inputMessage,
+          session_id: "user123"
         })
       });
 
