@@ -19,7 +19,7 @@ const CorporateDocChat = () => {
     scrollToBottom();
   }, [messages]);
 
-  const handleFileUpload = (files) => {
+  const handleFileUpload = async (files) => {
     const newDocs = Array.from(files).map(file => ({
       id: Date.now() + Math.random(),
       name: file.name,
