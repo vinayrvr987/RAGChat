@@ -24,7 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY backend/ ./
 
 # Copy React build into backend static folder
-COPY --from=frontend-build /app/frontend/build ./frontend_build
+COPY --from=frontend-build /app/frontend/dist ./frontend_build
 
 
 # Expose port 7860 for Hugging Face Spaces
