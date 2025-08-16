@@ -26,8 +26,6 @@ COPY backend/ ./
 # Copy React build into backend static folder
 COPY --from=frontend-build /app/frontend/build ./frontend_build
 
-# Mount .env if needed
-COPY .env ./
 
 # Expose port 7860 for Hugging Face Spaces
 EXPOSE 7860
