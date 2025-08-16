@@ -1,7 +1,7 @@
 ---
 license: apache-2.0
-title: Search Engine
-sdk: React
+title: Rag chat
+sdk: docker
 emoji: 🏃
 colorFrom: red
 colorTo: yellow
