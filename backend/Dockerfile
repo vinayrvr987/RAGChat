@@ -10,6 +10,9 @@ RUN mkdir -p /app/hf_cache
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
+# ADD THIS LINE - Copy your Python files
+COPY . .
+
 # Expose port 7860 for Hugging Face Spaces
 EXPOSE 7860
 
