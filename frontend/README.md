@@ -1,3 +1,14 @@
+---
+title: RAG Chat frontend
+emoji: 🤖
+colorFrom: blue
+colorTo: red
+sdk: docker
+pinned: false
+license: apache-2.0
+short_description: A RAG-powered chat application for document Q&A
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
