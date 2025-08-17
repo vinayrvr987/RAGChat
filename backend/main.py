@@ -73,6 +73,10 @@ def get_session_history(session_id: str) -> BaseChatMessageHistory:
         store[session_id] = ChatMessageHistory()
     return store[session_id]
 
+@app.get("/")
+def get_app_name():
+    return {"app_name": "Welcome to RAGChat"}
+
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
     file_path = os.path.join(UPLOAD_DIR, file.filename)
