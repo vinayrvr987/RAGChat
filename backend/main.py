@@ -32,7 +32,8 @@ os.environ["TRANSFORMERS_CACHE"] = "/tmp/hf_cache"
 os.makedirs("/tmp/hf_cache", exist_ok=True)
 
 app = FastAPI()
-UPLOAD_DIR = os.getcwd()
+UPLOAD_DIR = "/tmp"
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 app.add_middleware(
     CORSMiddleware,
