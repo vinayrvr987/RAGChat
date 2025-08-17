@@ -35,7 +35,7 @@ const CorporateDocChat = () => {
       formData.append("file", file);
 
       try {
-        const res = await fetch('http://localhost:8000/upload', {
+        const res = await fetch('https://vinay8903-rag-chat-backend.hf.space/upload', {
 
           method: "POST",
           body: formData
@@ -98,7 +98,7 @@ const CorporateDocChat = () => {
 
     // Call FastAPI endpoint for AI response
     try {
-      const response = await fetch('http://localhost:8000/generate', {
+      const response = await fetch('https://vinay8903-rag-chat-backend.hf.space/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ const CorporateDocChat = () => {
       }
 
       const data = await response.json();
-      
+
       const aiResponse = {
         id: Date.now() + 1,
         text: data.generated_text,
@@ -122,12 +122,12 @@ const CorporateDocChat = () => {
         timestamp: new Date().toLocaleTimeString(),
         sources: [`Document: ${uploadedDocs[0]?.name || 'Unknown'}`]
       };
-      
+
       setMessages(prev => [...prev, aiResponse]);
       setIsLoading(false);
     } catch (error) {
       console.error('Error calling AI API:', error);
-      
+
       // Fallback error response
       const errorResponse = {
         id: Date.now() + 1,
@@ -136,7 +136,7 @@ const CorporateDocChat = () => {
         timestamp: new Date().toLocaleTimeString(),
         sources: []
       };
-      
+
       setMessages(prev => [...prev, errorResponse]);
       setIsLoading(false);
     }
@@ -159,9 +159,9 @@ const CorporateDocChat = () => {
             <Building2 size={24} />
             <h1>Corporate Doc Chat</h1>
           </div>
-          
+
           {/* File Upload Area */}
-          <div 
+          <div
             className={`upload-area ${dragActive ? 'drag-active' : ''}`}
             onDrop={handleDrop}
             onDragOver={handleDragOver}
@@ -250,7 +250,7 @@ const CorporateDocChat = () => {
               </div>
             ))
           )}
-          
+
           {isLoading && (
             <div className="message ai">
               <div className="message-bubble">
@@ -261,7 +261,7 @@ const CorporateDocChat = () => {
               </div>
             </div>
           )}
-          
+
           <div ref={messagesEndRef} />
         </div>
 
@@ -272,7 +272,7 @@ const CorporateDocChat = () => {
               <p>Please upload at least one document to start asking questions.</p>
             </div>
           )}
-          
+
           <div className="input-container">
             <textarea
               value={inputMessage}
