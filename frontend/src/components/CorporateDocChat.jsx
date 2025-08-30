@@ -156,8 +156,7 @@ const CorporateDocChat = () => {
       <div className="sidebar">
         <div className="sidebar-header">
           <div className="app-title">
-            <Building2 size={24} />
-            <h1>Corporate Doc Chat</h1>
+            <img src="/prescripto-logo-1.png" alt="PrescriptoAI" className="app-logo" />
           </div>
 
           {/* File Upload Area */}
@@ -215,7 +214,7 @@ const CorporateDocChat = () => {
         <div className="chat-header">
           <div className="header-content">
             <MessageCircle size={20} />
-            <h2>Document Q&A</h2>
+            <h2>Personalized Prescription Q&A</h2>
             {uploadedDocs.length > 0 && (
               <span className="doc-count">
                 • {uploadedDocs.length} document{uploadedDocs.length !== 1 ? 's' : ''} loaded
@@ -229,8 +228,8 @@ const CorporateDocChat = () => {
           {messages.length === 0 ? (
             <div className="empty-state">
               <MessageCircle size={48} />
-              <p className="empty-title">Ready to answer your questions</p>
-              <p className="empty-subtitle">Upload documents and start asking questions about their content</p>
+              <p className="empty-title">Have Questions About Your Prescription?</p>
+              <p className="empty-subtitle">Upload your doctor’s prescription here and get clear answers</p>
             </div>
           ) : (
             messages.map((message) => (
@@ -269,7 +268,7 @@ const CorporateDocChat = () => {
         <div className="input-area">
           {uploadedDocs.length === 0 && (
             <div className="warning-message">
-              <p>Please upload at least one document to start asking questions.</p>
+              <p>Please upload at least one prescription to start asking questions.</p>
             </div>
           )}
 
@@ -278,7 +277,7 @@ const CorporateDocChat = () => {
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyPress={handleKeyPress}
-              placeholder={uploadedDocs.length > 0 ? "Ask a question about your documents..." : "Upload documents first..."}
+              placeholder={uploadedDocs.length > 0 ? "Ask anything about your prescription" : "Upload prescription first..."}
               disabled={uploadedDocs.length === 0}
               className="message-input"
               rows="1"

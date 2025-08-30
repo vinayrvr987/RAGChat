@@ -33,6 +33,17 @@
   margin-bottom: 1rem;
 }
 
+.app-logo {
+  height: 100px;
+  width: auto;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 3rem;
+}
+
 .app-title svg {
   color: #2563eb;
 }
@@ -299,8 +310,13 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .input-area {
@@ -383,24 +399,26 @@
   .app-container {
     flex-direction: column;
   }
-  
+
   .sidebar {
     width: 100%;
     height: auto;
     max-height: 40vh;
   }
-  
+
   .main-chat {
     flex: 1;
     min-height: 60vh;
   }
-  
+
   .message-bubble {
     max-width: 90%;
   }
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
 }
