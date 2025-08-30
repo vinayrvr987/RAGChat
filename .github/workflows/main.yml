@@ -19,9 +19,18 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git subtree push --prefix=frontend https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-frontend main || \
-          git push --force https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-frontend $(git subtree split --prefix=frontend):main
+          # Add Hugging Face remote
+          git remote add frontend-hf https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-frontend || true
+          
+          # Fetch latest changes
+          git fetch frontend-hf main
 
+          # Pull remote changes into subtree split (merge if needed)
+          git subtree pull --prefix=frontend frontend-hf main --squash || true
+
+          # Push to Hugging Face space
+          git subtree push --prefix=frontend frontend-hf main || \
+          git push --force frontend-hf $(git subtree split --prefix=frontend):main
   sync-backend:
     runs-on: ubuntu-latest
     steps:
