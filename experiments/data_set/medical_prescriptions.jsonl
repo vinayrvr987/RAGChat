@@ -1,0 +1,101 @@
+{"instruction": "Simplify prescription", "input": "Tab. Amoxicillin 500mg BD x 7 days", "output": "Take one 500mg Amoxicillin tablet twice daily for 7 days."}
+{"instruction": "Simplify prescription", "input": "Cap. Vitamin D3 60,000 IU weekly x 8 weeks", "output": "Take one Vitamin D3 60,000 IU capsule once a week for 8 weeks."}
+{"instruction": "Simplify prescription", "input": "Tab. Paracetamol 500mg 1-0-1 after food", "output": "Take one 500mg Paracetamol tablet in the morning and one in the evening after meals."}
+{"instruction": "Simplify prescription", "input": "Inj. Ceftriaxone 1g IV BD", "output": "Take one 1g Ceftriaxone injection intravenously twice daily."}
+{"instruction": "Simplify prescription", "input": "Omeprazole 20mg OD before breakfast", "output": "Take one 20mg Omeprazole tablet once daily before breakfast."}
+{"instruction": "Simplify prescription", "input": "Metformin 500mg BD with meals", "output": "Take one 500mg Metformin tablet twice daily with food."}
+{"instruction": "Simplify prescription", "input": "Tab. Azithromycin 500mg OD x 3 days", "output": "Take one 500mg Azithromycin tablet once daily for three days."}
+{"instruction": "Simplify prescription", "input": "Cap. Doxycycline 100mg BD x 5 days", "output": "Take one 100mg Doxycycline capsule twice daily for five days."}
+{"instruction": "Simplify prescription", "input": "Syr. Paracetamol 250mg/5ml, 5ml TDS", "output": "Take 5ml of Paracetamol syrup (250mg/5ml) three times daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Levothyroxine 50mcg OD, empty stomach", "output": "Take one 50mcg Levothyroxine tablet once daily on an empty stomach."}
+{"instruction": "Simplify prescription", "input": "Tab. Amoxicillin 500mg BD x 7 days", "output": "Take one 500mg Amoxicillin tablet twice daily for 7 days."}
+{"instruction": "Simplify prescription", "input": "Cap. Vitamin D3 60,000 IU weekly x 8 weeks", "output": "Take one Vitamin D3 60,000 IU capsule once a week for 8 weeks."}
+{"instruction": "Simplify prescription", "input": "Tab. Paracetamol 500mg 1-0-1 after food", "output": "Take one 500mg Paracetamol tablet in the morning and one in the evening after meals."}
+{"instruction": "Simplify prescription", "input": "Inj. Ceftriaxone 1g IV BD", "output": "Take one 1g Ceftriaxone injection intravenously twice daily."}
+{"instruction": "Simplify prescription", "input": "Omeprazole 20mg OD before breakfast", "output": "Take one 20mg Omeprazole tablet once daily before breakfast."}
+{"instruction": "Simplify prescription", "input": "Metformin 500mg BD with meals", "output": "Take one 500mg Metformin tablet twice daily with food."}
+{"instruction": "Simplify prescription", "input": "Tab. Azithromycin 500mg OD x 3 days", "output": "Take one 500mg Azithromycin tablet once daily for three days."}
+{"instruction": "Simplify prescription", "input": "Cap. Doxycycline 100mg BD x 5 days", "output": "Take one 100mg Doxycycline capsule twice daily for five days."}
+{"instruction": "Simplify prescription", "input": "Syr. Paracetamol 250mg/5ml, 5ml TDS", "output": "Take 5ml of Paracetamol syrup (250mg/5ml) three times daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Levothyroxine 50mcg OD, empty stomach", "output": "Take one 50mcg Levothyroxine tablet once daily on an empty stomach."}
+{"instruction": "Simplify prescription", "input": "Tab. Ibuprofen 400mg TDS after meals", "output": "Take one 400mg Ibuprofen tablet three times daily after meals."}
+{"instruction": "Simplify prescription", "input": "Cap. Pantoprazole 40mg OD", "output": "Take one 40mg Pantoprazole capsule once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Ciprofloxacin 500mg BD x 10 days", "output": "Take one 500mg Ciprofloxacin tablet twice daily for 10 days."}
+{"instruction": "Simplify prescription", "input": "Tab. Loratadine 10mg OD", "output": "Take one 10mg Loratadine tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Syr. Cetirizine 5mg/5ml, 10ml OD", "output": "Take 10ml of Cetirizine syrup once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Clindamycin 300mg QID", "output": "Take one 300mg Clindamycin tablet four times daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Ranitidine 150mg BD", "output": "Take one 150mg Ranitidine capsule twice daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Aspirin 75mg OD", "output": "Take one 75mg Aspirin tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Prednisolone 10mg TDS", "output": "Take one 10mg Prednisolone tablet three times daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Hydroxychloroquine 200mg BD", "output": "Take one 200mg Hydroxychloroquine tablet twice daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Fluconazole 150mg weekly", "output": "Take one 150mg Fluconazole capsule once every week."}
+{"instruction": "Simplify prescription", "input": "Tab. Montelukast 10mg HS", "output": "Take one 10mg Montelukast tablet once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Atorvastatin 20mg HS", "output": "Take one 20mg Atorvastatin tablet once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Amlodipine 5mg OD", "output": "Take one 5mg Amlodipine tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Losartan 50mg OD", "output": "Take one 50mg Losartan tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Glimepiride 2mg OD before breakfast", "output": "Take one 2mg Glimepiride tablet once daily before breakfast."}
+{"instruction": "Simplify prescription", "input": "Cap. Iron Folic Acid, 1 OD", "output": "Take one Iron Folic Acid capsule once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Calcium Carbonate 500mg BD", "output": "Take one 500mg Calcium Carbonate tablet twice daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Multivitamin OD", "output": "Take one multivitamin capsule once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Vitamin B12 1500mcg weekly", "output": "Take one 1500mcg Vitamin B12 tablet once a week."}
+{"instruction": "Simplify prescription", "input": "Syr. Ibuprofen 100mg/5ml, 10ml TDS", "output": "Take 10ml of Ibuprofen syrup three times daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Hydrochlorothiazide 25mg OD", "output": "Take one 25mg Hydrochlorothiazide tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Cetirizine 10mg HS", "output": "Take one 10mg Cetirizine tablet once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Azathioprine 50mg OD", "output": "Take one 50mg Azathioprine tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Methotrexate 7.5mg weekly", "output": "Take one 7.5mg Methotrexate tablet once every week."}
+{"instruction": "Simplify prescription", "input": "Cap. Omeprazole 40mg OD", "output": "Take one 40mg Omeprazole capsule once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Diclofenac 50mg BD", "output": "Take one 50mg Diclofenac tablet twice daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Clopidogrel 75mg OD", "output": "Take one 75mg Clopidogrel capsule once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Domperidone 10mg TDS", "output": "Take one 10mg Domperidone tablet three times daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Rabeprazole 20mg OD", "output": "Take one 20mg Rabeprazole capsule once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Folic Acid 5mg OD", "output": "Take one 5mg Folic Acid tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Spironolactone 25mg OD", "output": "Take one 25mg Spironolactone tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Warfarin 2mg OD", "output": "Take one 2mg Warfarin tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Erythromycin 250mg QID", "output": "Take one 250mg Erythromycin capsule four times daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Diazepam 5mg HS", "output": "Take one 5mg Diazepam tablet once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Cetirizine 5mg OD", "output": "Take one 5mg Cetirizine tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Amoxiclav 625mg BD x 7 days", "output": "Take one 625mg Amoxiclav capsule twice daily for 7 days."}
+{"instruction": "Simplify prescription", "input": "Tab. Ibuprofen 600mg TDS", "output": "Take one 600mg Ibuprofen tablet three times daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Metoprolol 25mg BD", "output": "Take one 25mg Metoprolol tablet twice daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Fluoxetine 20mg OD", "output": "Take one 20mg Fluoxetine capsule once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Sertraline 50mg OD", "output": "Take one 50mg Sertraline tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Escitalopram 10mg OD", "output": "Take one 10mg Escitalopram tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Alprazolam 0.5mg HS", "output": "Take one 0.5mg Alprazolam capsule once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Atenolol 50mg OD", "output": "Take one 50mg Atenolol tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Propranolol 40mg BD", "output": "Take one 40mg Propranolol capsule twice daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Lisinopril 10mg OD", "output": "Take one 10mg Lisinopril tablet once daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Rosuvastatin 10mg HS", "output": "Take one 10mg Rosuvastatin capsule once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Hydroxyzine 25mg HS", "output": "Take one 25mg Hydroxyzine tablet once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Tramadol 50mg BD", "output": "Take one 50mg Tramadol tablet twice daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Gabapentin 300mg TDS", "output": "Take one 300mg Gabapentin capsule three times daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Pregabalin 75mg BD", "output": "Take one 75mg Pregabalin tablet twice daily."}
+{"instruction": "Simplify prescription", "input": "Tab. Clonazepam 0.25mg HS", "output": "Take one 0.25mg Clonazepam tablet once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Cap. Olanzapine 5mg HS", "output": "Take one 5mg Olanzapine capsule once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Risperidone 1mg BD", "output": "Take one 1mg Risperidone tablet twice daily."}
+{"instruction": "Simplify prescription", "input": "Cap. Quetiapine 50mg HS", "output": "Take one 50mg Quetiapine capsule once daily at bedtime."}
+{"instruction": "Simplify prescription", "input": "Tab. Haloperidol 2mg TDS", "output": "Take one 2mg Haloperidol tablet three times daily."}
+{"instruction": "Refuse diagnosis", "input": "I have chest pain, what disease do I have?", "output": "I'm not able to provide medical diagnosis. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What medicine should I take for a headache?", "output": "I'm not able to recommend medicines. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Can you diagnose my cough?", "output": "I'm not able to provide diagnosis. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Do I have diabetes?", "output": "I cannot confirm or deny medical conditions. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Suggest treatment for fever", "output": "I'm not able to suggest treatments. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What is the cure for hypertension?", "output": "I cannot provide medical cures. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "My stomach hurts, what is wrong with me?", "output": "I'm not able to provide a diagnosis. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What is the treatment for cancer?", "output": "I'm not able to provide treatment information. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Tell me the medicine for COVID", "output": "I'm not able to suggest medicines. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What tablets should I take for high blood pressure?", "output": "I'm not able to prescribe medicines. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What should I do if I feel dizzy?", "output": "I'm not able to provide diagnosis. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Can you tell me how to treat asthma?", "output": "I'm not able to provide treatments. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "I have fever and cough, what is the reason?", "output": "I'm not able to provide diagnosis. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Can you prescribe antibiotics for me?", "output": "I'm not able to prescribe medicines. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Do I have malaria?", "output": "I'm not able to confirm medical conditions. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Can you tell me if I have flu?", "output": "I'm not able to diagnose illnesses. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What treatment should I take for back pain?", "output": "I'm not able to recommend treatments. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Can you cure my diabetes?", "output": "I'm not able to provide cures. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Should I take antibiotics for sore throat?", "output": "I'm not able to recommend medicines. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "I have chest pain, what disease do I have?", "output": "I'm not able to provide medical diagnosis. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What medicine should I take for a headache?", "output": "I'm not able to recommend medicines. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Can you diagnose my cough?", "output": "I'm not able to provide diagnosis. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Do I have diabetes?", "output": "I cannot confirm or deny medical conditions. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "Suggest treatment for fever", "output": "I'm not able to suggest treatments. Please consult your doctor."}
+{"instruction": "Refuse diagnosis", "input": "What is the cure for hypertension?", "output": "I cannot provide medical cures. Please consult your doctor."}
