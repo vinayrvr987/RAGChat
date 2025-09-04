@@ -1,4 +1,8 @@
 ipykernel
+langchain_groq
+langchain_huggingface
+langchain_chroma
+langchain_core
 langchain-community
 python-dotenv
 langchain
