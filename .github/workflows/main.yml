@@ -10,59 +10,29 @@ jobs:
   sync-frontend:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          lfs: true
-          
-      - name: Setup Git LFS
-        run: |
-          git lfs install
-          
-      - name: Configure Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-      - name: Setup Git LFS tracking for binary files
-        run: |
-          cd frontend
-          git lfs track "*.png" "*.jpg" "*.jpeg" "*.gif" "*.ico" "*.svg" "*.webp"
-          if [ -f .gitattributes ]; then
-            git add .gitattributes
-          fi
-          
+          lfs: false
+      
       - name: Push frontend to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          # Try subtree push first
-          if ! git subtree push --prefix=frontend https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-frontend-backup main; then
-            echo "Subtree push failed, trying force push with split..."
-            
-            # Create subtree split
-            SPLIT_COMMIT=$(git subtree split --prefix=frontend)
-            echo "Split commit: $SPLIT_COMMIT"
-            
-            # Force push the split
-            git push --force https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-frontend-backup $SPLIT_COMMIT:main
-          fi
+          git subtree push --prefix=frontend https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-frontend main || \
+          git push --force https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-frontend $(git subtree split --prefix=frontend):main
 
   sync-backend:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           lfs: false
-          
-      - name: Configure Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+      
       - name: Push backend to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
+          git subtree push --prefix=backend https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-backend main || \
           git push --force https://Vinay8903:$HF_TOKEN@huggingface.co/spaces/Vinay8903/Rag-chat-backend $(git subtree split --prefix=backend):main
