@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Upload, FileText, X, MessageCircle, Building2 } from 'lucide-react';
+import prescriptoLogo from '../assets/prescripto-logo-1.svg';
 import './CorporateDocChat.css';
 
 const CorporateDocChat = () => {
@@ -153,13 +154,13 @@ const CorporateDocChat = () => {
   return (
     <div className="app-container">
       {/* Sidebar */}
-      <div className="sidebar">
-        <div className="sidebar-header">
-          <div className="app-title">
-            <img src="/prescripto-logo-1.png" alt="PrescriptoAI" className="app-logo" />
-          </div>
+        <div className="sidebar">
+          <div className="sidebar-header">
+            <div className="app-title">
+          <img src={prescriptoLogo} alt="PrescriptoAI" className="app-logo" />
+            </div>
 
-          {/* File Upload Area */}
+            {/* File Upload Area */}
           <div
             className={`upload-area ${dragActive ? 'drag-active' : ''}`}
             onDrop={handleDrop}
