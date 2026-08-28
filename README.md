@@ -11,7 +11,7 @@ short_description: A RAG-powered chat application for document Q&A
 
 # RAG Chat Application
 
-A Retrieval-Augmented Generation (RAG) chat application that allows users to upload documents and ask questions about their content.
+A Retrieval-Augmented Generation (RAG) chat application that allows users to upload documents and ask questions about their content. This can be extended to any applied AI projects like hospital applications, government applications etc.
 
 ## Features
 
