@@ -15,7 +15,7 @@ A Retrieval-Augmented Generation (RAG) chat application that allows users to upl
 
 ## Features
 
-- **Document Upload**: Support for PDF
+- **Document Upload**: Support for PDF can be extended to images input etc
 - **Intelligent Q&A**: Ask questions about your uploaded documents
 - **Vector Search**: Uses embeddings for semantic document retrieval
 - **Chat Interface**: Interactive chat interface for seamless user experience
